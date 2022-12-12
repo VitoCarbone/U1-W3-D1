@@ -14,13 +14,10 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 function area(l1, l2){
-    l1= 10
-    l2= 10
   let somma= l1 * l2;
   return somma
 }
-let risultato= area()
-console.log("L'area del rettangolo è "+risultato)
+console.log("L'area del rettangolo è "+area(10,10));
 
 
 /* ESERCIZIO 2

@@ -1,21 +1,25 @@
-     /* function crazySum(num, num2){
-        num=10
-        num2=10
-        if(somm=num+num2){
-            console.log(somm)
-        } else{(somm2=somm)
+//SPLIT
+/*function upperFirst(stringa)=>{
+    let 
+}
+*/
 
-            console.log()
-        }
+const upperFirst = (stringa) => {
+  let risultato;
+  let parole = stringa.split(" ");
+  for (i = 0; i < parole.length; i++) {
+    let par = parole[i].split(" ");
+    let stringfina;
+    for (i=0; i < parole.length; i++) {
+      if (i === 0) {
+        let primaMaiu = par[i].toUpperCase();
+        stringfina += primaMaiu;
+      } else {
+        stringfina += par[i];
+      }
     }
-    */
-    
-    function crazyDiff(num, numfor){
-        numfor= 19
-        num=20
-        let somma = num - numfor;
-        return somma
-    }
-    let risult= crazyDiff()
-    console.log("La differenza è "+somma )
-               
+    risultato+=stringfina + " "
+  }
+  return risultato;
+};
+console.log(upperFirst("lorem ipsum"));
