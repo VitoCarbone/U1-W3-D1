@@ -1,0 +1,1 @@
+let check3and7 = function (n)

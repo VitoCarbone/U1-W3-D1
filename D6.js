@@ -120,6 +120,9 @@ console.log(epify(Global));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+
+
+
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", 
  il cui scopo è invertire una stringa fornita come parametro 
@@ -202,4 +205,12 @@ console.log(upperFirst("lorem ipsum"));
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-function giveMeRandom()
+let giveMeRandom = function (n) {
+  nnumrandom = [];
+  for (i = 0; i < n; i++) {
+    let random = Math.floor(Math.random() * 11);
+    nnumrandom.push(random);
+  }
+  console.log(nnumrandom);
+};
+giveMeRandom(5);
