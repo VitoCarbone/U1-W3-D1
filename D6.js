@@ -30,16 +30,16 @@ deve  invece tornare la loro somma moltiplicata per tre.
 /* SCRIVI QUI LA TUA RISPOSTA */
 function crazySum()
 if (num1 !== num2) {
-         let somma = num1 + num2;
-    return somma;
-              } else {
-     let sommacrazy = (num1 + num2) * 3;
-     return sommacrazy;
-              };
+   let somma = num1 + num2;
+  return somma;
+} else {
+  let sommacrazy = (num1 + num2) * 3;
+  return sommacrazy;
+};
 console.log(crazySum(2, 7));
 console.log(crazySum(4, 4));
 console.log(crazySum(6, 7));
- console.log(crazySum(8, 8))
+console.log(crazySum(8, 8));
 
 
 
@@ -60,9 +60,9 @@ const crazyDiff = function (num1) {
       return differenza2;
     }
   };
-  console.log(crazyDiff(8));
-  console.log(crazyDiff(19));
-  console.log(crazyDiff(50));
+ console.log(crazyDiff(8));
+console.log(crazyDiff(19));
+console.log(crazyDiff(50));
 
 
                        
@@ -99,9 +99,15 @@ function boundary(n){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-function epify(string){
-    if()
+const epify= (stringa) => {
+    if(stringa.startWith("EPICODE")){
+      return stringa
+    }else{
+      return "EPICODE" +stringa
+    }
 }
+console.log(epify("EPICODE Italia"));
+console.log(epify(Global));
     
 
 
@@ -122,6 +128,26 @@ function epify(string){
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+/*function reverseString(stringa){
+    let stringaNuova= stringa.split("");
+    console.log(stringaNuova);
+}
+console.log(reverseString("Ciao a tutti"));*/
+  //SPLIT HA SEPARATO TUTTE LE LETTERE TRA DI LORO 
+
+  function reverseString(stringa){
+    let stringaNuova= stringa.split("");
+    console.log(stringaNuova);
+    let stringacont=stringaNuova.reverse();
+    //reverse FA SCRIVERE LA FRASE AL CONTRARIO
+    console.log(stringacont);
+    let risultato= stringacont.join("");
+    //JOIN
+    console.log(risultato);
+}
+console.log(reverseString("Ciao a tutti"));
+
+
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", 
  che riceve come parametro una stringa formata da diverse parole.
@@ -130,6 +156,33 @@ function epify(string){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+//SPLIT
+/*function upperFirst(stringa)=>{
+    let 
+}
+*/
+
+const upperFirst = (stringa) => {
+  let risultato;
+  let parole = stringa.split(" ");
+  for (i = 0; i < parole.length; i++) {
+    let par = parole[i].split(" ");
+    let stringfina;
+    for (i=0; i < parole.length; i++) {
+      if (i === 0) {
+        let primaMaiu = par[i].toUpperCase();
+        stringfina += primaMaiu;
+      } else {
+        stringfina += par[i];
+      }
+    }
+    risultato+=stringfina + " "
+  }
+  return risultato;
+};
+console.log(upperFirst("lorem ipsum"));
+
+
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", 
